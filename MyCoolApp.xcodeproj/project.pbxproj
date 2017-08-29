@@ -9,19 +9,17 @@
 /* Begin PBXBuildFile section */
 		7904A39E1F54C08E007EDF48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7904A39D1F54C08E007EDF48 /* AppDelegate.swift */; };
 		7904A3A01F54C08E007EDF48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7904A39F1F54C08E007EDF48 /* ViewController.swift */; };
-		7904A3A31F54C08E007EDF48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7904A3A11F54C08E007EDF48 /* Main.storyboard */; };
 		7904A3A51F54C08E007EDF48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7904A3A41F54C08E007EDF48 /* Assets.xcassets */; };
-		7904A3A81F54C08E007EDF48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7904A3A61F54C08E007EDF48 /* LaunchScreen.storyboard */; };
+		7904A3B01F55E061007EDF48 /* TKLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7904A3AF1F55E061007EDF48 /* TKLoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7904A39A1F54C08E007EDF48 /* MyCoolApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCoolApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7904A39D1F54C08E007EDF48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7904A39F1F54C08E007EDF48 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7904A3A21F54C08E007EDF48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7904A3A41F54C08E007EDF48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7904A3A71F54C08E007EDF48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7904A3A91F54C08E007EDF48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7904A3AF1F55E061007EDF48 /* TKLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TKLoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +52,21 @@
 		7904A39C1F54C08E007EDF48 /* MyCoolApp */ = {
 			isa = PBXGroup;
 			children = (
+				7904A3B11F55E642007EDF48 /* Controller */,
 				7904A39D1F54C08E007EDF48 /* AppDelegate.swift */,
-				7904A39F1F54C08E007EDF48 /* ViewController.swift */,
-				7904A3A11F54C08E007EDF48 /* Main.storyboard */,
 				7904A3A41F54C08E007EDF48 /* Assets.xcassets */,
-				7904A3A61F54C08E007EDF48 /* LaunchScreen.storyboard */,
 				7904A3A91F54C08E007EDF48 /* Info.plist */,
 			);
 			path = MyCoolApp;
+			sourceTree = "<group>";
+		};
+		7904A3B11F55E642007EDF48 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7904A39F1F54C08E007EDF48 /* ViewController.swift */,
+				7904A3AF1F55E061007EDF48 /* TKLoginViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,9 +129,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7904A3A81F54C08E007EDF48 /* LaunchScreen.storyboard in Resources */,
 				7904A3A51F54C08E007EDF48 /* Assets.xcassets in Resources */,
-				7904A3A31F54C08E007EDF48 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,29 +142,11 @@
 			files = (
 				7904A3A01F54C08E007EDF48 /* ViewController.swift in Sources */,
 				7904A39E1F54C08E007EDF48 /* AppDelegate.swift in Sources */,
+				7904A3B01F55E061007EDF48 /* TKLoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		7904A3A11F54C08E007EDF48 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7904A3A21F54C08E007EDF48 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		7904A3A61F54C08E007EDF48 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7904A3A71F54C08E007EDF48 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		7904A3AA1F54C08E007EDF48 /* Debug */ = {
@@ -304,6 +289,7 @@
 				7904A3AE1F54C08E007EDF48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
